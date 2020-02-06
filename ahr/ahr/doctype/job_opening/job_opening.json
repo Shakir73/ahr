@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "autoname": "field:route",
+ "creation": "2020-01-31 21:25:11.126562",
+ "description": "Description of a Job Opening",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_title",
+  "company",
+  "status",
+  "column_break_4",
+  "designation",
+  "department",
+  "staffing_plan",
+  "planned_vacancies",
+  "section_break_9",
+  "route",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Job Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Open\nClosed"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "staffing_plan",
+   "fieldtype": "Link",
+   "label": "Staffing Plan",
+   "options": "Staffing Plan",
+   "read_only": 1
+  },
+  {
+   "depends_on": "staffing_plan",
+   "fieldname": "planned_vacancies",
+   "fieldtype": "Int",
+   "label": "Planned number of Positions",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route",
+   "unique": 1
+  },
+  {
+   "description": "Job profile, qualifications required etc.",
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Description"
+  }
+ ],
+ "icon": "fa fa-bookmark",
+ "links": [],
+ "modified": "2020-01-31 23:35:43.657683",
+ "modified_by": "Administrator",
+ "module": "AHR",
+ "name": "Job Opening",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "ASC"
+}

@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "creation": "2020-02-01 01:30:56.738324",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "leave_type",
+  "annual_allocation"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "leave_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Leave Type",
+   "options": "Leave Type",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "annual_allocation",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Annual Allocation",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2020-02-01 01:30:56.738324",
+ "modified_by": "Administrator",
+ "module": "AHR",
+ "name": "Leave Policy Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "Prompt",
+ "creation": "2020-02-01 04:19:51.873400",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "default_leave_policy",
+  "default_salary_structure"
+ ],
+ "fields": [
+  {
+   "fieldname": "default_leave_policy",
+   "fieldtype": "Link",
+   "label": "Default Leave Policy",
+   "options": "Leave Policy"
+  },
+  {
+   "fieldname": "default_salary_structure",
+   "fieldtype": "Link",
+   "label": "Default Salary Structure",
+   "options": "Salary Structure"
+  }
+ ],
+ "links": [],
+ "modified": "2020-02-01 04:20:24.187487",
+ "modified_by": "Administrator",
+ "module": "AHR",
+ "name": "Employee Grade",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
